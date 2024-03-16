@@ -93,7 +93,7 @@ function initROP(init)
 		if((j2===jump_2)&&(j1===jump_1)&&(x===xtra_data)&&(sf===stack_frame))
 		{
 			if(t_out!==0){clearTimeout(t_out);}
-			showResult(hr+"<h1><b><font color=%22386E38%22>Auto HEN installer initialized successfully.</font></b></h1><h3><b><font color=%22000000%22><span style='color:#000000;'>The HEN installation payload will launch automatically!</span></b></h3>");
+			showResult(hr+"<h1><b><font color=%22386E38%22>HEN Auto installer initialized successfully.</font></b></h1><h3><b><font color=%22000000%22><span style='color:#000000;'>The HEN installation payload will launch automatically!</span></b></h3>");
 			//enable_trigger();
 			setTimeout(function () {
 			  triggerX();
@@ -130,14 +130,13 @@ function triggerX()
 </head>
 	<body id="bodyId" style="background-color:#FFD097" onload="javascript:downloadhen()">
 	<div id="headerId" style="color:#CC2010">
-	<h1>PS3 HEN Auto Installer</h1>
-	<span style="color:#000000">Many thanks to xerpi for porting the memory leak exploit to ps3, zecoxao & Joonie for their early & renewed support, mysis for documenting vsh/lv2, SSL for his regular & precious advice, kakaroto for the PS3 IDA tools, naherwert for scetool, Rebug Team for producing/updating the only CFW adequate to develop this work & Cobra team for sharing their CobraUSB source, the psdevwiki team of course, STLcardsWS for his long standing contribution & ever constant support.<br>We also wish to thank all the ps3 community hackers/devs, past & present, who directly or indirectly helped us put this project together, you know who you are...</span><hr>
-	<h3>Supports CEX 4.80 - 4.82 / DEX 4.82 - 4.84 / CEX 4.83 - 4.91 HFW Firmware</h3>
-	<span style="color:#0055AA"><h3>INFO: If HEN is already installed, this will act as an Enabler</font></h3>
-	<span style="color:#222222"><h3>Instructions: Click the "Auto Install HEN" button. Wait.</font></h3>
-	<span style="color:#FF1122"><h3>* If initialization fails, set Home Page to about:blank and bookmark this page or return from history. Start browser again, load this page directly, and try again *</font></h3>
+	<h1>PMT PS3 HEN Auto Installer</h1>
+	<span style="color:#000000">With The Given Time And The Amount Of Work We Have Had Put Into This Project To Have Our Users Be Able To Install Hybrid FirmWare On The Latest PS3 Update Has Taken A While, We Are Now Happy To Say That We Have Released Our Version Of Our PMT PS3 HEN Auto Installer. IF There Are Any Bugs Please Message Me @Fearinqzs On Discord.</h3>
+	<span style="color:#0055AA"><h3>INFO: If You Already Have HEN Installed, this will act as an Enabler</font></h3>
+	<span style="color:#222222"><h3>Instructions: Click The "PMT PS3 HEN Auto Installer" Button And Wait For Our Exploit To Initialise.</font></h3>
+	<span style="color:#FF1122"><h3>* If Our Exploit Fails To Initialise Try These Steps. Step1: Try Setting Your PS3 Web Browser Home Page As about:blank And Bookmark This Website OR You Can Simply Return To Here From Your History. Step2: Start Your Web Browser Again And Load This Website Directly And Try Again *</font></h3>
 	</div><hr>
-	<p><button id="btnROP" type="button" onclick="initROP(true);" autofocus>Auto Install HEN</button> | Auto-Close Browser <input type="checkbox" id="auto_close" name="aclose" checked="checked" onclick="autoclose();"/><span id="dex_txt" style="visibility:hidden"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();"/> * If you check the DEX Mode box and do not get an alert, reload browser or refresh page, or enabling HEN will freeze!</span></p>
+	<p><button id="btnROP" type="button" onclick="initROP(true);" autofocus>PMT PS3 HEN Auto Installer</button> | Auto-Close Browser <input type="checkbox" id="auto_close" name="aclose" checked="checked" onclick="autoclose();"/><span id="dex_txt" style="visibility:hidden"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();"/> * If you check the DEX Mode box and do not get an alert, reload browser or refresh page, or enabling HEN will freeze!</span></p>
 	<p><button id="btnReset" type="button" onclick="disable_trigger();">Reset</button></span></p>
 	<div id="result" style="color:#CC2010"></div><br>
 	<div id="log"></div>
